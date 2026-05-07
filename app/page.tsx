@@ -5,6 +5,9 @@ import Hero from "@/components/sections/Hero";
 import Mission from "@/components/sections/Mission";
 import WhyItMatters from "@/components/sections/WhyItMatters";
 import Achievements from "@/components/sections/Achievements";
+import Micromarket from "@/components/sections/Micromarket";
+import Clients from "@/components/sections/Clients";
+import Team from "@/components/sections/Team";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Mission />
       <WhyItMatters />
       <Achievements />
+      <Micromarket />
+      <Clients />
+      <Team />
     </main>
   );
 }
