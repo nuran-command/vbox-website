@@ -3,6 +3,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Mission from "@/components/sections/Mission";
+import WhyItMatters from "@/components/sections/WhyItMatters";
+import Achievements from "@/components/sections/Achievements";
 
 export default function Home() {
   return (
@@ -10,10 +12,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Mission />
-      {/* Other sections will go here */}
-      <div className="h-screen bg-creamLight flex items-center justify-center">
-        <p className="text-brownMid font-body">More sections coming soon...</p>
-      </div>
+      <WhyItMatters />
+      <Achievements />
     </main>
   );
 }

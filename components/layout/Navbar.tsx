@@ -9,10 +9,10 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-50 bg-transparent text-white pt-6 pb-4">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px] flex items-center justify-between">
-        
+
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src="/images/Group 210.png" alt="vbox logo" className="h-12 w-auto object-contain" />
+          <img src="/images/vbox_logo.png" alt="vbox logo" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Menu */}
