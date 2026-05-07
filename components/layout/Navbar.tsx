@@ -11,13 +11,9 @@ export default function Navbar() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px] flex items-center justify-between">
         
         {/* Logo */}
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-yellow rounded-full flex items-center justify-center">
-            {/* simple placeholder for the yellow logo icon */}
-            <span className="text-espresso font-display font-bold text-xl">v</span>
-          </div>
-          <span className="font-display font-bold text-3xl">vbox</span>
-        </div>
+        <Link href="/" className="flex items-center">
+          <img src="/images/Group 210.png" alt="vbox logo" className="h-12 w-auto object-contain" />
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-body text-base font-medium">

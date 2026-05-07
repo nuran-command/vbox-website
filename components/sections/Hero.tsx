@@ -3,14 +3,16 @@ import React from 'react';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center bg-espresso">
-      {/* Background Image Placeholder */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        {/* Replace this div with an actual img or Next/Image later */}
-        <div className="w-full h-full bg-gray-800 opacity-60 mix-blend-overlay"></div>
+        <img 
+          src="/images/image 1.png" 
+          alt="Hero Background" 
+          className="w-full h-full object-cover"
+        />
+        {/* Black to Transparent Gradient Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent md:w-[70%] w-full"></div>
       </div>
-
-      {/* Gradient Overlay for Text Readability - Left 40% on Desktop */}
-      <div className="absolute inset-0 bg-gradient-to-r from-espresso/90 via-espresso/50 to-transparent md:w-[60%] w-full"></div>
 
       <div className="relative z-10 max-w-[1280px] w-full mx-auto px-4 sm:px-8 md:px-[80px] pt-[96px]">
         <div className="md:w-[50%]">
