@@ -1,0 +1,56 @@
+import React from 'react';
+
+export default function Mission() {
+  return (
+    <section className="py-[96px] md:py-[128px] bg-gradient-to-b from-[#4A4A4A] to-[#D1D1D1] relative overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px] relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] md:gap-[96px] items-center">
+          
+          {/* Text Content */}
+          <div className="flex flex-col">
+            <div className="flex items-center gap-[16px] mb-[24px]">
+              <span className="w-[32px] h-[2px] bg-orange"></span>
+              <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">Наша цель</span>
+            </div>
+            
+            <h2 className="font-display font-[700] text-[40px] md:text-[48px] lg:text-[56px] leading-[1.1] text-brown mb-[32px]">
+              Мы создаём <br className="hidden md:block"/> смысл через труд
+            </h2>
+            
+            <p className="font-body text-brownMid text-base md:text-lg mb-[40px] leading-relaxed">
+              Мы предоставляем значимые возможности трудоустройства для людей с 
+              особыми потребностями, выпускников детских домов и молодёжи из 
+              малообеспеченных семей. Наша мастерская создаёт поддерживающую 
+              среду, где каждый может развить навыки и построить карьеру.
+            </p>
+
+            {/* Badges / Tags */}
+            <div className="flex flex-wrap gap-[8px] md:gap-[16px]">
+              <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
+                Технологии
+              </span>
+              <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
+                Адаптация
+              </span>
+              <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
+                Масштабируемый импакт
+              </span>
+              <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
+                Социальный лифт
+              </span>
+            </div>
+          </div>
+
+          {/* Image Placeholder */}
+          <div className="relative w-full aspect-[4/5] md:aspect-square bg-grayLight rounded-3xl overflow-hidden shadow-2xl order-last">
+             {/* Replace this div with an actual img or Next/Image later */}
+             <div className="w-full h-full bg-creamWarm flex items-center justify-center text-brownMid font-body text-lg">
+               Image Placeholder
+             </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  );
+}

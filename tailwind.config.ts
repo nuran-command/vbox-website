@@ -35,8 +35,8 @@ const config: Config = {
         grayLight:    '#E0D5C0',  // input borders
       },
       fontFamily: {
-        display: ['Unbounded', 'sans-serif'],  // все крупные заголовки
-        body:    ['Nunito', 'sans-serif'],     // весь body text, кнопки, labels
+        display: ['var(--font-unbounded)', 'sans-serif'],  // все крупные заголовки
+        body:    ['var(--font-nunito)', 'sans-serif'],     // весь body text, кнопки, labels
       },
     },
   },

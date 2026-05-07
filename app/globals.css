@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --background: #FFFCF7;
+  --foreground: #2C2210;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-nunito), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-unbounded), sans-serif;
+}
