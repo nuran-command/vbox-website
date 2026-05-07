@@ -8,6 +8,9 @@ import Achievements from "@/components/sections/Achievements";
 import Micromarket from "@/components/sections/Micromarket";
 import Clients from "@/components/sections/Clients";
 import Team from "@/components/sections/Team";
+import CTAForm from "@/components/sections/CTAForm";
+import Contacts from "@/components/sections/Contacts";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +23,9 @@ export default function Home() {
       <Micromarket />
       <Clients />
       <Team />
+      <CTAForm />
+      <Contacts />
+      <Footer />
     </main>
   );
 }
