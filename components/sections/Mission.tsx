@@ -41,12 +41,9 @@ export default function Mission() {
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Image */}
           <div className="relative w-full aspect-[4/5] md:aspect-square bg-grayLight rounded-3xl overflow-hidden shadow-2xl order-last">
-             {/* Replace this div with an actual img or Next/Image later */}
-             <div className="w-full h-full bg-creamWarm flex items-center justify-center text-brownMid font-body text-lg">
-               Image Placeholder
-             </div>
+             <img src="/images/image 5.png" alt="Mission" className="w-full h-full object-cover" />
           </div>
           
         </div>

@@ -30,7 +30,7 @@ export default function Contacts() {
             <div className="bg-white border border-beigeStrong shadow-sm rounded-[24px] p-[32px] max-w-[480px]">
               <div className="flex items-center gap-[24px] mb-[24px]">
                 <div className="w-[80px] h-[80px] bg-grayLight rounded-full overflow-hidden shrink-0">
-                  {/* <img src="/images/founder.jpg" alt="Тулешев Раймбек" className="w-full h-full object-cover" /> */}
+                  <img src="/images/image 17.png" alt="Тулешев Раймбек" className="w-full h-full object-cover" />
                 </div>
                 <p className="font-display font-[700] text-[32px] leading-[1.1] text-brown">
                   Тулешев <br/> Раймбек
@@ -54,9 +54,7 @@ export default function Contacts() {
 
           {/* Right Column: Image */}
           <div className="relative w-full aspect-[4/3] rounded-[32px] overflow-hidden shadow-xl">
-            <div className="w-full h-full bg-creamWarm flex items-center justify-center text-brownMid font-body text-center p-4">
-              <p>Team/Event Photo Placeholder</p>
-            </div>
+            <img src="/images/image 23.png" alt="Event photo" className="w-full h-full object-cover" />
           </div>
 
         </div>

@@ -63,10 +63,7 @@ export default function Achievements() {
           <div className="relative mt-[32px] md:mt-0 px-[16px] md:px-0">
             {/* Main Image Container */}
             <div className="relative w-full aspect-square md:aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl">
-              {/* Replace with actual image later */}
-              <div className="w-full h-full bg-creamWarm flex items-center justify-center text-brownMid font-body">
-                Achievement Photo Placeholder
-              </div>
+              <img src="/images/image 22.png" alt="Achievement" className="w-full h-full object-cover" />
             </div>
             
             {/* Overlapping Quote Box */}

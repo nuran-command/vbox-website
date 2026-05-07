@@ -8,10 +8,7 @@ export default function Micromarket() {
           
           {/* Left Column: Image (on mobile, moves to top) */}
           <div className="order-2 md:order-1 relative w-full aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden shadow-xl">
-            {/* Placeholder for vending machine image */}
-            <div className="w-full h-full bg-creamWarm flex items-center justify-center text-brownMid font-body text-center p-4">
-              <p>Vending Machine Photo Placeholder</p>
-            </div>
+            <img src="/images/micromarket.png" alt="Micromarket vending machine" className="w-full h-full object-cover" />
           </div>
 
           {/* Right Column: Text & Grid */}

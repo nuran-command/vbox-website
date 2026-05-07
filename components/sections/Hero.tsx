@@ -5,9 +5,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col justify-center bg-espresso">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src="/images/image 1.png" 
-          alt="Hero Background" 
+        <img
+          src="/images/image 1.png"
+          alt="Hero Background"
           className="w-full h-full object-cover"
         />
         {/* Black to Transparent Gradient Overlay for text readability */}
@@ -21,10 +21,10 @@ export default function Hero() {
             <br />
             <span className="text-orange">Project</span>
           </h1>
-          
+
           <p className="font-body text-white/90 text-base md:text-lg max-w-[480px] mb-[32px] leading-relaxed">
-            Мы расширяем возможности людей с особыми потребностями, 
-            выпускников детских домов и детей из малообеспеченных семей 
+            Мы расширяем возможности людей с особыми потребностями,
+            выпускников детских домов и детей из малообеспеченных семей
             через технологии и значимую занятость.
           </p>
 
