@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Team() {
-  const photos = Array.from({ length: 4 });
+  const photos = ['team1.png', 'team2.png', 'team3.png', 'team4.png'];
 
   return (
     <section className="py-[96px] md:py-[128px] bg-cream overflow-hidden">
@@ -25,20 +25,22 @@ export default function Team() {
       </div>
 
       {/* Horizontal Photo Strip */}
-      <div className="px-4 sm:px-8 md:px-[80px] max-w-[1280px] mx-auto overflow-x-auto pb-[32px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-        <div className="flex gap-[24px] w-max md:w-full">
-          {photos.map((_, i) => (
+      <div className="pl-4 sm:pl-8 md:pl-[max(80px,calc((100vw-1280px)/2+80px))] overflow-x-auto pb-[32px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="flex gap-[24px] w-max pr-4 md:pr-[80px]">
+          {photos.map((src, i) => (
             <div 
               key={i} 
-              className="w-[280px] md:w-[calc(25%-18px)] aspect-[3/4] bg-creamWarm rounded-[32px] overflow-hidden shrink-0 shadow-lg group relative cursor-pointer"
+              className="w-[280px] sm:w-[320px] md:w-[360px] aspect-[3/4] bg-creamWarm rounded-[32px] overflow-hidden shrink-0 shadow-lg group relative cursor-pointer"
             >
-              {/* Image Placeholder */}
-              <div className="w-full h-full bg-grayLight flex items-center justify-center text-brownMid font-body text-sm transition-transform duration-500 group-hover:scale-105">
-                Photo {i + 1}
-              </div>
+              {/* Image */}
+              <img 
+                src={`/images/${src}`} 
+                alt={`Team member ${i + 1}`}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               
               {/* Subtle overlay on hover */}
-              <div className="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/10 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/10 transition-colors duration-300 pointer-events-none"></div>
             </div>
           ))}
         </div>

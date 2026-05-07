@@ -358,6 +358,10 @@
 @layer components;
 
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+
   .absolute {
     position: absolute;
   }
@@ -1437,6 +1441,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:w-\[320px\] {
+      width: 320px;
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1571,6 +1581,12 @@
   @media (min-width: 48rem) {
     .md\:w-\[96px\] {
       width: 96px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-\[360px\] {
+      width: 360px;
     }
   }
 
