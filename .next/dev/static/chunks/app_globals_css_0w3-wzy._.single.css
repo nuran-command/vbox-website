@@ -61,6 +61,7 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
+      --tw-ease: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
@@ -102,6 +103,7 @@
     --radius-xl: .75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --ease-in-out: cubic-bezier(.4, 0, .2, 1);
     --blur-md: 12px;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
@@ -904,6 +906,16 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
+  .-translate-y-full {
+    --tw-translate-y: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .translate-y-0 {
+    --tw-translate-y: calc(var(--spacing) * 0);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
@@ -1089,6 +1101,11 @@
     border-top-width: .8px;
   }
 
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+
   .border-b-\[0\.8px\] {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: .8px;
@@ -1106,6 +1123,11 @@
   .border-beigeStrong\/50 {
     border-color: #eae7df80;
     border-color: lab(91.7146% .0134707 4.28242 / .5);
+  }
+
+  .border-white\/10 {
+    border-color: #ffffff1a;
+    border-color: lab(100% -.0000298023 .0000119209 / .1);
   }
 
   .border-white\/20 {
@@ -1159,6 +1181,16 @@
   .bg-espresso\/0 {
     background-color: #0000;
     background-color: lab(0% 0 0 / 0);
+  }
+
+  .bg-espresso\/50 {
+    background-color: #1a120880;
+    background-color: lab(6.12601% 2.59187 5.90925 / .5);
+  }
+
+  .bg-espresso\/85 {
+    background-color: #1a1208d9;
+    background-color: lab(6.12601% 2.59187 5.90925 / .85);
   }
 
   .bg-espresso\/95 {
@@ -1367,6 +1399,10 @@
 
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
 
   .py-8 {
@@ -1826,6 +1862,11 @@
   .duration-500 {
     --tw-duration: .5s;
     transition-duration: .5s;
+  }
+
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
   }
 
   .outline-none {
@@ -2946,6 +2987,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @property --tw-duration {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-ease {
   syntax: "*";
   inherits: false
 }

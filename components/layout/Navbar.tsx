@@ -1,13 +1,49 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Option 1: Glassmorphism when scrolled past top
+      if (currentScrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
+      // Option 3: Hide on scroll down, show on scroll up
+      if (currentScrollY > lastScrollY && currentScrollY > 200) {
+        setIsHidden(true);
+      } else if (currentScrollY < lastScrollY) {
+        setIsHidden(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
+  const navClasses = `fixed w-full z-50 text-white transition-all duration-300 ease-in-out ${
+    isHidden ? '-translate-y-full' : 'translate-y-0'
+  } ${
+    isScrolled 
+      ? 'bg-espresso/50 backdrop-blur-md shadow-lg py-4 border-b border-white/10' 
+      : 'bg-transparent pt-6 pb-4'
+  }`;
 
   return (
-    <nav className="fixed w-full z-50 bg-transparent text-white pt-6 pb-4">
+    <nav className={navClasses}>
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between">
 
         {/* Logo */}
