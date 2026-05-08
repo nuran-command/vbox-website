@@ -7,14 +7,14 @@ export default function Team() {
     <section className="py-[96px] md:py-[128px] bg-cream overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
         {/* Header */}
-        <div className="relative flex flex-col mb-[64px] items-center text-center">
+        <div className="relative flex flex-col mb-[64px] items-start text-left md:items-center md:text-center">
           {/* Label: Absolute left on desktop, centered/flow on mobile */}
-          <div className="md:absolute md:left-0 md:top-[12px] flex items-center gap-[16px] mb-[24px] md:mb-0">
+          <div className="md:absolute md:left-0 md:-top-[32px] flex items-center justify-start gap-[16px] mb-[24px] md:mb-0">
             <span className="w-[32px] h-[2px] bg-orange"></span>
             <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">Наша команда</span>
           </div>
 
-          <h2 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[24px] max-w-[800px] mx-auto">
+          <h2 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[24px] max-w-[800px] mx-0 md:mx-auto">
             Хочешь стать частью <br className="hidden md:block" /> нашей команды?
           </h2>
 

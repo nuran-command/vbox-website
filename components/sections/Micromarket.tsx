@@ -4,7 +4,7 @@ export default function Micromarket() {
   return (
     <section className="py-[96px] md:py-[128px] bg-white overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-6 sm:px-8 md:px-[34px]">
-        
+
         {/* Section Tag */}
         <div className="flex items-center justify-start gap-[16px] mb-[32px] md:mb-[64px] lg:pl-[100px]">
           <span className="w-[32px] h-[2px] bg-orange"></span>
@@ -12,12 +12,12 @@ export default function Micromarket() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-[48px] md:gap-[64px] lg:pl-[100px] items-center lg:items-start text-center lg:text-left">
-          
+
           {/* Left Column: Machine Image */}
           <img 
             src="/images/micromarket.png" 
             alt="VBox Machine" 
-            className="rounded-[32px] object-cover flex-shrink-0 w-full max-w-[400px] md:max-w-[554px] h-auto" 
+            className="rounded-[32px] object-cover flex-shrink-0 w-full max-w-[400px] md:max-w-[600px] lg:self-stretch" 
           />
 
           {/* Right Column: Content */}
@@ -25,7 +25,7 @@ export default function Micromarket() {
             <h2 className="font-display font-[700] text-[32px] md:text-[40px] text-brown mb-[16px] leading-tight">
               Что такое vbox?
             </h2>
-            
+
             <p className="font-body text-brownLight text-[16px] md:text-[18px] leading-[1.4] mb-[40px]">
               Умный вендинговый автомат — где можно купить готовую еду, снеки, воду и напитки за 30 секунд, не выходя из офиса. Работает 24/7.
             </p>
@@ -47,15 +47,17 @@ export default function Micromarket() {
 
 function CategoryCard({ title, image }: { title: string; image: string }) {
   return (
-    <div 
-      className="bg-white rounded-[20px] md:rounded-[30px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col items-center pt-[16px] md:pt-[20px] border border-beigeStrong transition-all hover:scale-[1.02] overflow-hidden w-full aspect-[206/138]"
+    <div
+      className="relative w-full aspect-[206/138] rounded-[24px] md:rounded-[32px] overflow-hidden transition-all hover:scale-[1.02] cursor-pointer group bg-transparent"
     >
-      <p className="font-body font-bold text-brown text-[14px] md:text-[16px] uppercase tracking-wider mb-2 text-center">
+      <img 
+        src={image} 
+        alt={title} 
+        className="absolute inset-0 w-full h-full object-cover" 
+      />
+      <p className="absolute top-[16px] md:top-[24px] left-0 w-full text-center font-display text-[#1A1A1A] text-[16px] md:text-[22px] font-[400] uppercase tracking-wide z-10">
         {title}
       </p>
-      <div className="w-full flex-grow flex items-center justify-center overflow-hidden p-2">
-        <img src={image} alt={title} className="w-full h-full object-contain" />
-      </div>
     </div>
   );
 }

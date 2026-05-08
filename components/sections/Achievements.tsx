@@ -24,12 +24,12 @@ export default function Achievements() {
 
   return (
     <section className="py-[96px] md:py-[128px] bg-white relative overflow-hidden">
-      <div className="max-w-[1379px] mx-auto px-4 sm:px-8 md:px-[34px]">
-        <div className="max-w-[1180px] mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] items-start">
+      <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
+        <div className="w-full relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-[40px] lg:gap-[80px] items-start">
 
             {/* Left Column: Text & List */}
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <div className="flex items-center gap-[16px] mb-[24px]">
                 <span className="w-[32px] h-[2px] bg-orange"></span>
                 <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">Наши достижения</span>
@@ -45,7 +45,7 @@ export default function Achievements() {
               </p>
 
               {/* Achievements List */}
-              <div className="flex flex-col mb-[40px] w-full max-w-[740px]">
+              <div className="flex flex-col mb-[40px] w-full">
                 {displayedItems.map((item, idx) => {
                   const isBlurred = !isExpanded && idx === 4;
                   return (
@@ -69,7 +69,7 @@ export default function Achievements() {
                 })}
               </div>
 
-              <div className="flex justify-center w-full max-w-[740px]">
+              <div className="flex justify-center lg:justify-start w-full">
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="px-[48px] py-[16px] bg-amber text-espresso font-body font-bold rounded-full transition-all hover:brightness-110 hover:-translate-y-1 hover:shadow-lg shadow-md w-full md:w-auto"
@@ -80,7 +80,7 @@ export default function Achievements() {
             </div>
 
             {/* Right Column: Image and Quote */}
-            <div className="relative flex flex-col items-center lg:items-end lg:pt-[280px] lg:translate-x-[60px] w-full">
+            <div className="relative flex flex-col items-center lg:items-start lg:mt-[345px] w-full lg:pl-[20px]">
               <div
                 className="relative rounded-[30px] overflow-hidden shadow-xl w-full max-w-[452px] aspect-[452/422]"
               >
