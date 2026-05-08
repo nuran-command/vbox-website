@@ -23,7 +23,7 @@ export default function Achievements() {
   const displayedItems = isExpanded ? ALL_ACHIEVEMENTS : ALL_ACHIEVEMENTS.slice(0, 5);
 
   return (
-    <section className="py-[96px] md:py-[128px] bg-white relative overflow-hidden">
+    <section id="achievements" className="py-[96px] md:py-[128px] bg-white relative overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
         <div className="w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-[40px] lg:gap-[80px] items-start">

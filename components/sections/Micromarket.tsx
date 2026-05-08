@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Micromarket() {
   return (
-    <section className="py-[96px] md:py-[128px] bg-white overflow-hidden">
+    <section id="micromarket" className="py-[96px] md:py-[128px] bg-white overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-6 sm:px-8 md:px-[34px]">
 
         {/* Section Tag */}

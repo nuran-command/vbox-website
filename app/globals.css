@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Adjust based on navbar height */
+}
+
 :root {
   --background: #FFFCF7;
   --foreground: #2C2210;

@@ -9,6 +9,28 @@ export default function Navbar() {
   const [isHidden, setIsHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    if (id === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80; // Adjust for navbar height
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -47,16 +69,20 @@ export default function Navbar() {
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link 
+          href="/" 
+          className="flex items-center"
+          onClick={(e) => scrollToSection(e, 'top')}
+        >
           <img src="/images/vbox_logo.png" alt="vbox logo" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-body text-base font-medium">
-          <Link href="#about" className="hover:text-amber transition-colors">О нас</Link>
-          <Link href="#achievements" className="hover:text-amber transition-colors">Достижения</Link>
-          <Link href="#micromarket" className="hover:text-amber transition-colors">Микромаркет</Link>
-          <Link href="#join" className="hover:text-amber transition-colors">Присоединиться</Link>
+          <Link href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-amber transition-colors">О нас</Link>
+          <Link href="#achievements" onClick={(e) => scrollToSection(e, 'achievements')} className="hover:text-amber transition-colors">Достижения</Link>
+          <Link href="#micromarket" onClick={(e) => scrollToSection(e, 'micromarket')} className="hover:text-amber transition-colors">Микромаркет</Link>
+          <Link href="#join" onClick={(e) => scrollToSection(e, 'join')} className="hover:text-amber transition-colors">Присоединиться</Link>
         </div>
 
         {/* Right Actions */}
@@ -64,9 +90,13 @@ export default function Navbar() {
           <button className="w-12 h-12 rounded-full bg-orange flex items-center justify-center text-sm font-bold transition-transform hover:scale-105">
             RU
           </button>
-          <button className="px-8 py-3 rounded-full bg-orange font-body font-bold text-sm transition-transform hover:scale-105">
+          <Link 
+            href="#join" 
+            onClick={(e) => scrollToSection(e, 'join')}
+            className="px-8 py-3 rounded-full bg-orange font-body font-bold text-sm transition-transform hover:scale-105 text-center"
+          >
             Связаться с нами
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -80,13 +110,19 @@ export default function Navbar() {
       {/* Mobile Menu Drawer */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-espresso/95 backdrop-blur-md text-white p-8 flex flex-col gap-6">
-          <Link href="#about" className="font-body text-lg" onClick={() => setIsOpen(false)}>О нас</Link>
-          <Link href="#achievements" className="font-body text-lg" onClick={() => setIsOpen(false)}>Достижения</Link>
-          <Link href="#micromarket" className="font-body text-lg" onClick={() => setIsOpen(false)}>Микромаркет</Link>
-          <Link href="#join" className="font-body text-lg" onClick={() => setIsOpen(false)}>Присоединиться</Link>
+          <Link href="#about" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'about')}>О нас</Link>
+          <Link href="#achievements" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'achievements')}>Достижения</Link>
+          <Link href="#micromarket" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'micromarket')}>Микромаркет</Link>
+          <Link href="#join" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'join')}>Присоединиться</Link>
           <div className="flex gap-4 pt-4 border-t border-white/20">
             <button className="w-12 h-12 rounded-full bg-orange flex items-center justify-center font-bold">RU</button>
-            <button className="flex-1 rounded-full bg-orange font-bold font-body">Связаться с нами</button>
+            <Link 
+              href="#join" 
+              className="flex-1 rounded-full bg-orange font-bold font-body py-3 text-center" 
+              onClick={(e) => scrollToSection(e, 'join')}
+            >
+              Связаться с нами
+            </Link>
           </div>
         </div>
       )}

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CTAForm() {
   return (
-    <section className="py-[64px] md:py-[96px] bg-white overflow-hidden px-4 md:px-0">
+    <section id="join" className="py-[64px] md:py-[96px] bg-white overflow-hidden px-4 md:px-0">
       <div
         className="bg-amber rounded-[32px] md:rounded-l-none md:rounded-r-[48px] relative flex items-center shadow-2xl w-full max-w-[1640px] py-[48px] lg:py-0 min-h-auto lg:h-[670px] mx-auto md:mx-0"
       >
