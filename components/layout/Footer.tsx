@@ -22,14 +22,14 @@ function TwitterIcon({ className }: { className?: string }) {
 export default function Footer() {
   return (
     <footer className="bg-espresso text-white">
-      <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px] py-[64px] md:py-[96px]">
+      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8 py-[64px] md:py-[96px]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[64px]">
           
           {/* Col 1: Logo, Tagline, Socials */}
           <div className="flex flex-col h-full justify-between gap-[48px]">
             <div>
               <Link href="/" className="inline-block mb-[24px]">
-                <span className="font-display font-[800] text-[32px] text-yellow tracking-widest uppercase">VBOX</span>
+                <img src="/images/vbox_logo.png" alt="vbox logo" className="h-12 w-auto object-contain" />
               </Link>
               <p className="font-body text-[14px] text-white/70 leading-[1.6] mb-[32px] max-w-[300px]">
                 Социальный стартап, объединяющий людей и технологии для создания инклюзивных рабочих мест в Казахстане.
