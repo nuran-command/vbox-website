@@ -84,3 +84,89 @@
 {"timestamp":"02:46:56.397","source":"Server","level":"LOG","message":"✓ Compiled in 110ms"}
 {"timestamp":"02:46:58.613","source":"Server","level":"LOG","message":"✓ Compiled in 166ms"}
 {"timestamp":"02:47:00.626","source":"Server","level":"LOG","message":"✓ Compiled in 86ms"}
+{"timestamp":"23:43:35.658","source":"Server","level":"LOG","message":"✓ Compiled in 433ms"}
+{"timestamp":"23:43:37.406","source":"Server","level":"LOG","message":"✓ Compiled in 79ms"}
+{"timestamp":"23:51:03.998","source":"Server","level":"LOG","message":"✓ Compiled in 484ms"}
+{"timestamp":"23:51:17.110","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"23:56:10.839","source":"Server","level":"LOG","message":"✓ Compiled in 376ms"}
+{"timestamp":"24:08:29.100","source":"Server","level":"LOG","message":"✓ Compiled in 385ms"}
+{"timestamp":"24:10:30.249","source":"Server","level":"LOG","message":"✓ Compiled in 393ms"}
+{"timestamp":"24:16:37.703","source":"Server","level":"LOG","message":"✓ Compiled in 438ms"}
+{"timestamp":"24:21:55.788","source":"Server","level":"LOG","message":"✓ Compiled in 423ms"}
+{"timestamp":"24:22:05.167","source":"Server","level":"LOG","message":"✓ Compiled in 318ms"}
+{"timestamp":"24:22:13.605","source":"Server","level":"LOG","message":"✓ Compiled in 169ms"}
+{"timestamp":"24:22:21.359","source":"Server","level":"LOG","message":"✓ Compiled in 88ms"}
+{"timestamp":"24:22:28.366","source":"Server","level":"LOG","message":"✓ Compiled in 115ms"}
+{"timestamp":"24:22:36.252","source":"Server","level":"LOG","message":"✓ Compiled in 74ms"}
+{"timestamp":"24:22:44.637","source":"Server","level":"LOG","message":"✓ Compiled in 219ms"}
+{"timestamp":"24:22:52.134","source":"Server","level":"LOG","message":"✓ Compiled in 82ms"}
+{"timestamp":"24:22:59.846","source":"Server","level":"LOG","message":"✓ Compiled in 90ms"}
+{"timestamp":"24:23:07.490","source":"Server","level":"LOG","message":"✓ Compiled in 78ms"}
+{"timestamp":"24:23:15.021","source":"Server","level":"LOG","message":"✓ Compiled in 222ms"}
+{"timestamp":"24:29:59.331","source":"Server","level":"LOG","message":"✓ Compiled in 411ms"}
+{"timestamp":"24:35:31.113","source":"Server","level":"LOG","message":"✓ Compiled in 609ms"}
+{"timestamp":"24:40:57.066","source":"Server","level":"LOG","message":"✓ Compiled in 425ms"}
+{"timestamp":"24:44:52.410","source":"Server","level":"LOG","message":"✓ Compiled in 214ms"}
+{"timestamp":"24:46:25.200","source":"Server","level":"LOG","message":"✓ Compiled in 166ms"}
+{"timestamp":"24:47:47.800","source":"Server","level":"LOG","message":"✓ Compiled in 139ms"}
+{"timestamp":"24:49:49.799","source":"Server","level":"LOG","message":"✓ Compiled in 422ms"}
+{"timestamp":"24:50:23.672","source":"Server","level":"LOG","message":"✓ Compiled in 218ms"}
+{"timestamp":"24:51:03.184","source":"Server","level":"LOG","message":"✓ Compiled in 166ms"}
+{"timestamp":"24:51:52.666","source":"Server","level":"LOG","message":"✓ Compiled in 221ms"}
+{"timestamp":"24:52:11.391","source":"Server","level":"LOG","message":"✓ Compiled in 80ms"}
+{"timestamp":"24:53:46.740","source":"Server","level":"LOG","message":"✓ Compiled in 560ms"}
+{"timestamp":"24:55:55.135","source":"Server","level":"LOG","message":"✓ Compiled in 337ms"}
+{"timestamp":"24:58:02.555","source":"Server","level":"LOG","message":"✓ Compiled in 359ms"}
+{"timestamp":"24:58:15.476","source":"Server","level":"LOG","message":"✓ Compiled in 196ms"}
+{"timestamp":"24:58:18.691","source":"Server","level":"LOG","message":"✓ Compiled in 57ms"}
+{"timestamp":"24:59:20.483","source":"Server","level":"LOG","message":"✓ Compiled in 199ms"}
+{"timestamp":"25:06:30.719","source":"Server","level":"LOG","message":"✓ Compiled in 348ms"}
+{"timestamp":"25:07:51.017","source":"Server","level":"LOG","message":"✓ Compiled in 272ms"}
+{"timestamp":"25:08:10.209","source":"Server","level":"LOG","message":"✓ Compiled in 585ms"}
+{"timestamp":"25:08:15.370","source":"Server","level":"LOG","message":"✓ Compiled in 105ms"}
+{"timestamp":"25:08:27.737","source":"Server","level":"LOG","message":"✓ Compiled in 68ms"}
+{"timestamp":"25:08:35.698","source":"Server","level":"LOG","message":"✓ Compiled in 210ms"}
+{"timestamp":"25:08:43.147","source":"Server","level":"LOG","message":"✓ Compiled in 83ms"}
+{"timestamp":"25:08:57.288","source":"Server","level":"LOG","message":"✓ Compiled in 110ms"}
+{"timestamp":"25:13:12.026","source":"Server","level":"LOG","message":"✓ Compiled in 300ms"}
+{"timestamp":"25:15:45.547","source":"Server","level":"LOG","message":"✓ Compiled in 532ms"}
+{"timestamp":"25:18:21.728","source":"Server","level":"LOG","message":"✓ Compiled in 446ms"}
+{"timestamp":"25:20:19.942","source":"Server","level":"LOG","message":"✓ Compiled in 232ms"}
+{"timestamp":"25:23:08.812","source":"Server","level":"LOG","message":"✓ Compiled in 597ms"}
+{"timestamp":"25:28:45.031","source":"Server","level":"LOG","message":"✓ Compiled in 763ms"}
+{"timestamp":"25:29:38.819","source":"Server","level":"LOG","message":"✓ Compiled in 204ms"}
+{"timestamp":"25:31:20.944","source":"Server","level":"LOG","message":"✓ Compiled in 224ms"}
+{"timestamp":"25:32:28.945","source":"Server","level":"LOG","message":"✓ Compiled in 241ms"}
+{"timestamp":"25:40:25.644","source":"Server","level":"LOG","message":"✓ Compiled in 611ms"}
+{"timestamp":"25:42:23.637","source":"Server","level":"LOG","message":"✓ Compiled in 224ms"}
+{"timestamp":"25:44:10.100","source":"Server","level":"LOG","message":"✓ Compiled in 228ms"}
+{"timestamp":"25:44:32.127","source":"Server","level":"LOG","message":"✓ Compiled in 67ms"}
+{"timestamp":"25:47:56.948","source":"Server","level":"LOG","message":"✓ Compiled in 481ms"}
+{"timestamp":"25:47:57.627","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:5\nExpression expected\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |     ^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component]"}
+{"timestamp":"25:47:57.627","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:6\nUnterminated regexp literal\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |      ^^^^^^^^^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component]"}
+{"timestamp":"25:48:09.642","source":"Server","level":"ERROR","message":"[browser] \"./components/sections/Hero.tsx:77:5\\nExpression expected\\n  75 |         </div>\\n  76 |       </div>\\n> 77 |     </section>\\n     |     ^\\n  78 |   );\\n  79 | }\\n  80 |\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./components/sections/Hero.tsx [Client Component Browser]\\n    ./app/page.tsx [Client Component Browser]\\n    ./app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./components/sections/Hero.tsx [Client Component SSR]\\n    ./app/page.tsx [Client Component SSR]\\n    ./app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"25:48:09.644","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:5\nExpression expected\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |     ^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component] \"\""}
+{"timestamp":"25:48:09.644","source":"Server","level":"ERROR","message":"[browser] \"./components/sections/Hero.tsx:77:6\\nUnterminated regexp literal\\n  75 |         </div>\\n  76 |       </div>\\n> 77 |     </section>\\n     |      ^^^^^^^^^\\n  78 |   );\\n  79 | }\\n  80 |\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./components/sections/Hero.tsx [Client Component Browser]\\n    ./app/page.tsx [Client Component Browser]\\n    ./app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./components/sections/Hero.tsx [Client Component SSR]\\n    ./app/page.tsx [Client Component SSR]\\n    ./app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"25:48:09.644","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:6\nUnterminated regexp literal\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |      ^^^^^^^^^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component] \"\""}
+{"timestamp":"25:48:09.676","source":"Server","level":"ERROR","message":"[browser] \"./components/sections/Hero.tsx:77:5\\nExpression expected\\n  75 |         </div>\\n  76 |       </div>\\n> 77 |     </section>\\n     |     ^\\n  78 |   );\\n  79 | }\\n  80 |\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./components/sections/Hero.tsx [Client Component Browser]\\n    ./app/page.tsx [Client Component Browser]\\n    ./app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./components/sections/Hero.tsx [Client Component SSR]\\n    ./app/page.tsx [Client Component SSR]\\n    ./app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"25:48:09.676","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:5\nExpression expected\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |     ^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component] \"\""}
+{"timestamp":"25:48:09.676","source":"Server","level":"ERROR","message":"[browser] \"./components/sections/Hero.tsx:77:6\\nUnterminated regexp literal\\n  75 |         </div>\\n  76 |       </div>\\n> 77 |     </section>\\n     |      ^^^^^^^^^\\n  78 |   );\\n  79 | }\\n  80 |\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./components/sections/Hero.tsx [Client Component Browser]\\n    ./app/page.tsx [Client Component Browser]\\n    ./app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./components/sections/Hero.tsx [Client Component SSR]\\n    ./app/page.tsx [Client Component SSR]\\n    ./app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"25:48:09.676","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:6\nUnterminated regexp literal\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |      ^^^^^^^^^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component] \"\""}
+{"timestamp":"25:48:09.676","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:5\nExpression expected\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |     ^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component]"}
+{"timestamp":"25:48:09.676","source":"Browser","level":"ERROR","message":"./components/sections/Hero.tsx:77:6\nUnterminated regexp literal\n  75 |         </div>\n  76 |       </div>\n> 77 |     </section>\n     |      ^^^^^^^^^\n  78 |   );\n  79 | }\n  80 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./components/sections/Hero.tsx [Client Component Browser]\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./components/sections/Hero.tsx [Client Component SSR]\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component]"}
+{"timestamp":"25:48:17.464","source":"Server","level":"LOG","message":"✓ Compiled in 220ms"}
+{"timestamp":"25:49:24.835","source":"Server","level":"LOG","message":"✓ Compiled in 343ms"}
+{"timestamp":"25:52:24.440","source":"Server","level":"LOG","message":"✓ Compiled in 222ms"}
+{"timestamp":"25:54:33.799","source":"Server","level":"LOG","message":"✓ Compiled in 257ms"}
+{"timestamp":"25:56:52.122","source":"Server","level":"LOG","message":"✓ Compiled in 334ms"}
+{"timestamp":"25:59:47.497","source":"Server","level":"LOG","message":"✓ Compiled in 241ms"}
+{"timestamp":"26:00:34.647","source":"Server","level":"LOG","message":"✓ Compiled in 257ms"}
+{"timestamp":"26:02:53.596","source":"Server","level":"LOG","message":"✓ Compiled in 337ms"}
+{"timestamp":"26:04:13.037","source":"Server","level":"LOG","message":"✓ Compiled in 205ms"}
+{"timestamp":"26:04:42.829","source":"Server","level":"LOG","message":"✓ Compiled in 200ms"}
+{"timestamp":"26:05:02.859","source":"Server","level":"LOG","message":"✓ Compiled in 705ms"}
+{"timestamp":"26:05:17.910","source":"Server","level":"LOG","message":"✓ Compiled in 111ms"}
+{"timestamp":"26:06:25.966","source":"Server","level":"LOG","message":"✓ Compiled in 286ms"}
+{"timestamp":"26:08:38.979","source":"Server","level":"LOG","message":"✓ Compiled in 356ms"}
+{"timestamp":"26:08:47.116","source":"Server","level":"LOG","message":"✓ Compiled in 119ms"}
+{"timestamp":"26:10:12.126","source":"Server","level":"LOG","message":"✓ Compiled in 202ms"}

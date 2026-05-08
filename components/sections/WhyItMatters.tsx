@@ -3,7 +3,7 @@ import React from 'react';
 export default function WhyItMatters() {
   return (
     <section className="py-[96px] md:py-[128px] bg-cream">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px]">
+      <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
         
         {/* Header content */}
         <div className="text-center max-w-[800px] mx-auto mb-[64px]">

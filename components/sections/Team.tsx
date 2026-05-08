@@ -5,7 +5,7 @@ export default function Team() {
 
   return (
     <section className="py-[96px] md:py-[128px] bg-cream overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px]">
+      <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
         {/* Header */}
         <div className="relative flex flex-col mb-[64px] items-center text-center">
           {/* Label: Absolute left on desktop, centered/flow on mobile */}
@@ -25,8 +25,8 @@ export default function Team() {
       </div>
 
       {/* Horizontal Photo Strip */}
-      <div className="pl-4 sm:pl-8 md:pl-[max(80px,calc((100vw-1280px)/2+80px))] overflow-x-auto pb-[32px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-        <div className="flex gap-[24px] w-max pr-4 md:pr-[80px]">
+      <div className="pl-4 sm:pl-8 md:pl-[max(34px,calc((100vw-1514px)/2+34px))] overflow-x-auto pb-[48px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="flex gap-[24px] w-max pr-4 md:pr-[34px]">
           {photos.map((src, i) => (
             <div
               key={i}

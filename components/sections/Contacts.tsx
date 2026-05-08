@@ -11,7 +11,7 @@ function MailIcon({ className }: { className?: string }) {
 export default function Contacts() {
   return (
     <section className="py-[96px] md:py-[128px] bg-cream">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px]">
+      <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[64px] items-center">
           

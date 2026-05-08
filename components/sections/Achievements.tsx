@@ -1,79 +1,107 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const ALL_ACHIEVEMENTS = [
+  "Финалисты BI SYNERGY SPRINT 2024 от BI Group — вошли в топ-10 из 200 проектов.",
+  "Финалисты Quick Start XV 2024.",
+  "Победа в программе MIRAI Министерства иностранных дел Японии.",
+  "Победа в конкурсе Social Startup Camp 2025, организованном NU Impact Foundation для лучших социальных стартапов.",
+  "Победа в номинации Heart of Impact на People & Projects Awards 2025.",
+  "Победа в ProductBee Awards 2025 (креативный бизнес).",
+  "Победа в номинации Startup of the Year 2025 (Vbox Social).",
+  "Победа в MNU Alumni Awards 2025 как лучший предпринимательский проект.",
+  "Вхождение в Short-list STEPPE Awards 2025.",
+  "Приглашение и презентация на World Nomad Games.",
+  "Участие в международном форуме молодежи в России, получены предложения о сотрудничестве и выходе на рынок РФ.",
+  "Международные презентации проекта в Индии, России и Италии.",
+  "Коллаборации: ComicCon Astana 2025, Team Spirit PGL Astana 2025, международный хоккейный турнир KHL.",
+  "Благодарственное письмо для нас ТОО “Sheksiz Orta” от (NU)."
+];
 
 export default function Achievements() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const displayedItems = isExpanded ? ALL_ACHIEVEMENTS : ALL_ACHIEVEMENTS.slice(0, 5);
+
   return (
-    <section className="py-[96px] md:py-[128px] bg-cream">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px]">
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[64px] items-center">
-          
-          {/* Left Column: Text & List */}
-          <div className="flex flex-col">
-            <div className="flex items-center gap-[16px] mb-[24px]">
-              <span className="w-[32px] h-[2px] bg-orange"></span>
-              <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">Наши достижения</span>
-            </div>
-            
-            <h2 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[16px]">
-              Результаты, <br className="hidden md:block" /> которые говорят сами
-            </h2>
-            <p className="font-body text-brownLight text-base md:text-lg mb-[48px]">
-              Достижения которых мы достигли
-            </p>
+    <section className="py-[96px] md:py-[128px] bg-white relative overflow-hidden">
+      <div className="max-w-[1379px] mx-auto px-4 sm:px-8 md:px-[34px]">
+        <div className="max-w-[1180px] mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] items-start">
 
-            {/* Achievements List */}
-            <div className="flex flex-col mb-[48px]">
-              <div className="border-t border-beigeStrong py-[24px] flex items-start gap-[24px]">
-                <span className="font-display font-bold text-[32px] text-orange w-[32px] leading-none">1</span>
-                <p className="font-body text-brown text-lg font-bold leading-snug">
-                  Победа в номинации Heart of Impact на People & Projects Awards 2025
-                </p>
+            {/* Left Column: Text & List */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-[16px] mb-[24px]">
+                <span className="w-[32px] h-[2px] bg-orange"></span>
+                <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">Наши достижения</span>
               </div>
-              
-              <div className="border-t border-beigeStrong py-[24px] flex items-start gap-[24px]">
-                <span className="font-display font-bold text-[32px] text-orange w-[32px] leading-none">2</span>
-                <p className="font-body text-brown text-lg font-bold leading-snug">
-                  Победа в ProductBestAwards 2025 (креативный бизнес).
-                </p>
-              </div>
-              
-              <div className="border-t border-beigeStrong py-[24px] flex items-start gap-[24px]">
-                <span className="font-display font-bold text-[32px] text-orange w-[32px] leading-none">3</span>
-                <p className="font-body text-brown text-lg font-bold leading-snug">
-                  Победа в конкурсе Social Startup Camp 2025 NU Impact
-                </p>
-              </div>
-              
-              <div className="border-y border-beigeStrong py-[24px] flex items-start gap-[24px]">
-                <span className="font-display font-bold text-[32px] text-orange w-[32px] leading-none">4</span>
-                <p className="font-body text-brown text-lg font-bold leading-snug">
-                  Foundation для лучших социальных стартапов
-                </p>
-              </div>
-            </div>
 
-            <div>
-              <button className="px-[32px] py-[16px] bg-yellow text-espresso font-body font-bold rounded-full transition-transform hover:-translate-y-1 hover:shadow-lg">
-                Смотреть все
-              </button>
-            </div>
-          </div>
-
-          {/* Right Column: Image and Quote */}
-          <div className="relative mt-[32px] md:mt-0 px-[16px] md:px-0">
-            {/* Main Image Container */}
-            <div className="relative w-full aspect-square md:aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl">
-              <img src="/images/image 22.png" alt="Achievement" className="w-full h-full object-cover" />
-            </div>
-            
-            {/* Overlapping Quote Box */}
-            <div className="absolute -bottom-[24px] md:bottom-[48px] -left-[8px] md:-left-[48px] bg-yellow rounded-2xl md:rounded-[24px] px-[24px] md:px-[40px] py-[20px] md:py-[32px] shadow-xl max-w-[90%] md:max-w-[80%] z-10">
-              <p className="font-display font-[700] text-[20px] md:text-[24px] text-espresso leading-snug">
-                “Место для цитаты _______”
+              <h2
+                className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[16px]"
+                style={{ width: '1194.7px' }}
+              >
+                Результаты, которые говорят сами
+              </h2>
+              <p className="font-body text-brownLight text-base md:text-lg mb-[48px]">
+                Достижения которых мы достигли
               </p>
-            </div>
-          </div>
 
+              {/* Achievements List */}
+              <div className="flex flex-col mb-[40px] w-full max-w-[740px]">
+                {displayedItems.map((item, idx) => {
+                  const isBlurred = !isExpanded && idx === 4;
+                  return (
+                    <div
+                      key={idx}
+                      className={`relative border-t-[0.8px] ${isBlurred ? '' : 'border-b-[0.8px]'} border-beigeStrong flex items-center gap-[24px] overflow-hidden transition-all duration-500`}
+                      style={{ width: '740px', height: '87.6px' }}
+                    >
+                      <div className={`flex items-start gap-[24px] w-full ${isBlurred ? 'blur-[4px] opacity-40 pointer-events-none' : ''}`}>
+                        <span className="font-display font-bold text-[32px] text-orange w-[32px] leading-none flex-shrink-0">{idx + 1}</span>
+                        <p className="font-body text-brown text-[16px] md:text-[18px] font-bold leading-snug pr-4">
+                          {item}
+                        </p>
+                      </div>
+
+                      {/* Gradient fade overlay for the 5th item when collapsed */}
+                      {isBlurred && (
+                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/60 z-10"></div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="flex justify-center w-full max-w-[740px]">
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="px-[48px] py-[16px] bg-amber text-espresso font-body font-bold rounded-full transition-all hover:brightness-110 hover:-translate-y-1 hover:shadow-lg shadow-md"
+                >
+                  {isExpanded ? "Скрыть" : "Смотреть все"}
+                </button>
+              </div>
+            </div>
+
+            {/* Right Column: Image and Quote */}
+            <div className="relative flex flex-col items-center lg:items-end lg:pt-[280px] lg:translate-x-[60px]">
+              <div
+                className="relative rounded-[30px] overflow-hidden shadow-xl"
+                style={{ width: '452px', height: '422px' }}
+              >
+                <img src="/images/image 22.png" alt="Achievement" className="w-full h-full object-cover" />
+              </div>
+
+              {/* Overlapping Quote Box */}
+              <div
+                className="absolute -bottom-[24px] lg:-bottom-[40px] lg:right-[20px] bg-amber rounded-[20px] px-[24px] py-[20px] shadow-lg z-20 flex items-center justify-center text-center"
+                style={{ width: '417px', height: '79px' }}
+              >
+                <p className="font-display font-[700] text-[18px] md:text-[20px] text-espresso">
+                  “Место для цитаты _______”
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

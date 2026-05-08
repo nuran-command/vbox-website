@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Mission() {
   return (
-    <section className="py-[96px] md:py-[128px] bg-gradient-to-b from-[#4A4A4A] to-[#D1D1D1] relative overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 md:px-[80px] relative z-10">
+    <section className="py-[96px] md:py-[128px] bg-white relative overflow-hidden">
+      <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px] relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] md:gap-[96px] items-center">
           
           {/* Text Content */}
