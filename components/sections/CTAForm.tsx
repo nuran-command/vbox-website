@@ -2,16 +2,14 @@ import React from 'react';
 
 export default function CTAForm() {
   return (
-    <section className="py-[96px] bg-white overflow-hidden">
+    <section className="py-[64px] md:py-[96px] bg-white overflow-hidden px-4 md:px-0">
       <div
-        className="bg-amber rounded-r-[32px] md:rounded-r-[48px] relative flex items-center shadow-2xl"
-        style={{ width: '1640px', height: '670px' }}
+        className="bg-amber rounded-[32px] md:rounded-l-none md:rounded-r-[48px] relative flex items-center shadow-2xl w-full max-w-[1640px] py-[48px] lg:py-0 min-h-auto lg:h-[670px] mx-auto md:mx-0"
       >
         <div
-          className="mx-auto px-[34px] lg:px-[95px] flex items-center justify-between w-full"
-          style={{ maxWidth: '1180px', height: '425.6px' }}
+          className="mx-auto px-[24px] sm:px-[34px] lg:px-[95px] flex items-center justify-between w-full max-w-[1180px]"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] items-center w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[64px] items-center w-full">
 
             {/* Left Column: Text */}
             <div className="flex flex-col text-white">

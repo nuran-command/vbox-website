@@ -37,7 +37,6 @@ export default function Achievements() {
 
               <h2
                 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[16px]"
-                style={{ width: '1194.7px' }}
               >
                 Результаты, которые говорят сами
               </h2>
@@ -52,12 +51,11 @@ export default function Achievements() {
                   return (
                     <div
                       key={idx}
-                      className={`relative border-t-[0.8px] ${isBlurred ? '' : 'border-b-[0.8px]'} border-beigeStrong flex items-center gap-[24px] overflow-hidden transition-all duration-500`}
-                      style={{ width: '740px', height: '87.6px' }}
+                      className={`relative border-t-[0.8px] ${isBlurred ? '' : 'border-b-[0.8px]'} border-beigeStrong flex items-center gap-[16px] md:gap-[24px] overflow-hidden transition-all duration-500 py-4 min-h-[88px]`}
                     >
-                      <div className={`flex items-start gap-[24px] w-full ${isBlurred ? 'blur-[4px] opacity-40 pointer-events-none' : ''}`}>
-                        <span className="font-display font-bold text-[32px] text-orange w-[32px] leading-none flex-shrink-0">{idx + 1}</span>
-                        <p className="font-body text-brown text-[16px] md:text-[18px] font-bold leading-snug pr-4">
+                      <div className={`flex items-start gap-[16px] md:gap-[24px] w-full ${isBlurred ? 'blur-[4px] opacity-40 pointer-events-none' : ''}`}>
+                        <span className="font-display font-bold text-[24px] md:text-[32px] text-orange w-[24px] md:w-[32px] leading-none flex-shrink-0">{idx + 1}</span>
+                        <p className="font-body text-brown text-[14px] md:text-[18px] font-bold leading-snug pr-4">
                           {item}
                         </p>
                       </div>
@@ -74,7 +72,7 @@ export default function Achievements() {
               <div className="flex justify-center w-full max-w-[740px]">
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="px-[48px] py-[16px] bg-amber text-espresso font-body font-bold rounded-full transition-all hover:brightness-110 hover:-translate-y-1 hover:shadow-lg shadow-md"
+                  className="px-[48px] py-[16px] bg-amber text-espresso font-body font-bold rounded-full transition-all hover:brightness-110 hover:-translate-y-1 hover:shadow-lg shadow-md w-full md:w-auto"
                 >
                   {isExpanded ? "Скрыть" : "Смотреть все"}
                 </button>
@@ -82,20 +80,18 @@ export default function Achievements() {
             </div>
 
             {/* Right Column: Image and Quote */}
-            <div className="relative flex flex-col items-center lg:items-end lg:pt-[280px] lg:translate-x-[60px]">
+            <div className="relative flex flex-col items-center lg:items-end lg:pt-[280px] lg:translate-x-[60px] w-full">
               <div
-                className="relative rounded-[30px] overflow-hidden shadow-xl"
-                style={{ width: '452px', height: '422px' }}
+                className="relative rounded-[30px] overflow-hidden shadow-xl w-full max-w-[452px] aspect-[452/422]"
               >
                 <img src="/images/image 22.png" alt="Achievement" className="w-full h-full object-cover" />
               </div>
 
               {/* Overlapping Quote Box */}
               <div
-                className="absolute -bottom-[24px] lg:-bottom-[40px] lg:right-[20px] bg-amber rounded-[20px] px-[24px] py-[20px] shadow-lg z-20 flex items-center justify-center text-center"
-                style={{ width: '417px', height: '79px' }}
+                className="absolute -bottom-[24px] lg:-bottom-[40px] lg:right-[20px] bg-amber rounded-[20px] px-[24px] py-[20px] shadow-lg z-20 flex items-center justify-center text-center w-[90%] max-w-[417px] min-h-[79px]"
               >
-                <p className="font-display font-[700] text-[18px] md:text-[20px] text-espresso">
+                <p className="font-display font-[700] text-[16px] md:text-[20px] text-espresso">
                   “Место для цитаты _______”
                 </p>
               </div>
