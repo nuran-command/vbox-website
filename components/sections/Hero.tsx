@@ -15,7 +15,7 @@ export default function Hero() {
       <img
         src="/images/image 0.png"
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover object-[center_top] md:w-[1535px] md:h-[912px] md:top-0 md:right-0 md:left-auto md:bottom-auto max-w-none"
+        className="absolute inset-0 w-full h-full object-cover object-[40%_100%] md:w-[1535px] md:h-[912px] md:top-0 md:right-0 md:left-auto md:bottom-auto max-w-none"
       />
 
       {/* Overlay - full page */}
@@ -27,7 +27,7 @@ export default function Hero() {
       ></div>
 
       {/* Text Content Container */}
-      <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 max-w-[1700px] mx-auto pt-[100px] md:pt-[150px] pb-10">
+      <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 max-w-[1700px] mx-auto pt-[100px] md:pt-[150px] pb-10 -translate-y-12 md:-translate-y-20">
         <div className="flex flex-col">
           <h1
             className="font-display font-[700] text-white mb-[24px] md:mb-[40px] text-[52px] leading-[1.1] tracking-[-1px] md:text-[86px] md:leading-[84px] md:tracking-[-2.58px]"
@@ -41,11 +41,12 @@ export default function Hero() {
             {t('hero.description')}
           </p>
 
-          <button
+          <a
+            href="#join"
             className="bg-orange text-white font-body font-bold rounded-[12px] transition-transform hover:-translate-y-1 hover:shadow-lg w-full sm:w-[221.55px] h-[50.8px] text-[16px] flex items-center justify-center"
           >
             {t('hero.button')}
-          </button>
+          </a>
         </div>
       </div>
     </section>
