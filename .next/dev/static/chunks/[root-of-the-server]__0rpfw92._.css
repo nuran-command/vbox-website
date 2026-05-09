@@ -704,10 +704,6 @@
     margin-bottom: 16px;
   }
 
-  .mb-\[20px\] {
-    margin-bottom: 20px;
-  }
-
   .mb-\[24px\] {
     margin-bottom: 24px;
   }
@@ -772,32 +768,16 @@
     height: calc(var(--spacing) * 12);
   }
 
-  .h-\[1px\] {
-    height: 1px;
-  }
-
   .h-\[2px\] {
     height: 2px;
-  }
-
-  .h-\[20px\] {
-    height: 20px;
   }
 
   .h-\[28px\] {
     height: 28px;
   }
 
-  .h-\[40px\] {
-    height: 40px;
-  }
-
   .h-\[50\.8px\] {
     height: 50.8px;
-  }
-
-  .h-\[80px\] {
-    height: 80px;
   }
 
   .h-\[140px\] {
@@ -844,10 +824,6 @@
     width: calc(var(--spacing) * 12);
   }
 
-  .w-\[20px\] {
-    width: 20px;
-  }
-
   .w-\[24px\] {
     width: 24px;
   }
@@ -858,14 +834,6 @@
 
   .w-\[32px\] {
     width: 32px;
-  }
-
-  .w-\[40px\] {
-    width: 40px;
-  }
-
-  .w-\[80px\] {
-    width: 80px;
   }
 
   .w-\[90\%\] {
@@ -906,10 +874,6 @@
 
   .max-w-\[452px\] {
     max-width: 452px;
-  }
-
-  .max-w-\[480px\] {
-    max-width: 480px;
   }
 
   .max-w-\[500px\] {
@@ -1179,10 +1143,6 @@
     background-color: #f5c518;
   }
 
-  .bg-beigeStrong {
-    background-color: #eae7df;
-  }
-
   .bg-cream {
     background-color: #fffcf7;
   }
@@ -1216,10 +1176,6 @@
 
   .bg-orange {
     background-color: #e8721a;
-  }
-
-  .bg-peach {
-    background-color: #fce8d4;
   }
 
   .bg-transparent {
@@ -1427,10 +1383,6 @@
 
   .text-\[16px\] {
     font-size: 16px;
-  }
-
-  .text-\[18px\] {
-    font-size: 18px;
   }
 
   .text-\[20px\] {
@@ -1742,12 +1694,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:text-orange:hover {
-      color: #e8721a;
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:text-yellow:hover {
       color: #febb01;
     }
@@ -2007,6 +1953,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:gap-\[40px\] {
+      gap: 40px;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:gap-\[64px\] {
       gap: 64px;
     }
@@ -2121,6 +2073,12 @@
   @media (min-width: 48rem) {
     .md\:text-\[22px\] {
       font-size: 22px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:text-\[24px\] {
+      font-size: 24px;
     }
   }
 
@@ -2297,6 +2255,11 @@
   .\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {
     display: none;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 :root {
