@@ -25,6 +25,11 @@ export default function Home() {
       <Team />
       <CTAForm />
       <Contacts />
+      <div className="w-full overflow-hidden">
+        <div className="w-full aspect-[4/3] md:aspect-[21/10] rounded-t-[32px] md:rounded-t-[64px] overflow-hidden">
+          <img src="/images/image 23.jpg" alt="Team Group" className="w-full h-full object-cover" />
+        </div>
+      </div>
       <Footer />
     </main>
   );

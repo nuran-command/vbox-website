@@ -1,3 +1,15 @@
 {"timestamp":"00:00:02.012","source":"Server","level":"LOG","message":""}
 {"timestamp":"00:02:56.791","source":"Server","level":"LOG","message":"✓ Compiled in 2.1s"}
 {"timestamp":"00:04:59.957","source":"Server","level":"LOG","message":"✓ Compiled in 309ms"}
+{"timestamp":"00:11:06.466","source":"Server","level":"LOG","message":"✓ Compiled in 495ms"}
+{"timestamp":"00:11:52.109","source":"Server","level":"LOG","message":"✓ Compiled in 1042ms"}
+{"timestamp":"00:11:52.546","source":"Browser","level":"ERROR","message":"uncaughtError: ReferenceError: Can't find variable: Link"}
+{"timestamp":"00:11:52.663","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: Can't find variable: Link\\u001b[39m\\n\\u001b[31m    at forEach ([native code])\\u001b[39m\""}
+{"timestamp":"00:11:52.666","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught ReferenceError: Can't find variable: Link\u001b[39m\n\u001b[31m    at forEach ([native code])\u001b[39m"}
+{"timestamp":"00:12:01.024","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"00:12:01.035","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:16:05.657","source":"Server","level":"LOG","message":"✓ Compiled in 540ms"}
+{"timestamp":"00:19:10.925","source":"Server","level":"LOG","message":"✓ Compiled in 494ms"}
+{"timestamp":"00:20:35.997","source":"Server","level":"LOG","message":"✓ Compiled in 221ms"}
+{"timestamp":"00:24:12.913","source":"Server","level":"LOG","message":"✓ Compiled in 455ms"}
+{"timestamp":"00:52:13.826","source":"Server","level":"LOG","message":"✓ Compiled in 404ms"}
