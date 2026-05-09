@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Clients() {
   const { t } = useLanguage();
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
   const clients = [
     {
       name: 'Барыс Арена',
@@ -36,6 +41,29 @@ export default function Clients() {
     }
   ];
 
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed multiplier
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   return (
     <section className="py-[96px] md:py-[128px] bg-cream overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
@@ -57,16 +85,23 @@ export default function Clients() {
       </div>
 
       {/* Horizontal Scroll Area */}
-      <div className="pl-4 sm:pl-8 md:pl-[max(34px,calc((100vw-1514px)/2+34px))] overflow-x-auto pb-[48px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-        <div className="flex gap-[24px] w-max pr-4 sm:pr-8 md:pr-[34px]">
+      <div 
+        ref={scrollRef}
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeave}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+        className={`pl-4 sm:pl-8 md:pl-[max(34px,calc((100vw-1514px)/2+34px))] overflow-x-auto pb-[48px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${isDragging ? 'cursor-grabbing select-none' : 'cursor-grab'}`}
+      >
+        <div className="flex gap-[24px] w-max pr-4 sm:pr-8 md:pr-[34px] pointer-events-none md:pointer-events-auto">
           {clients.map((client, i) => (
-            <div key={i} className="bg-white rounded-[32px] p-[32px] w-[300px] min-h-[420px] flex flex-col items-center shrink-0 border border-beigeStrong/50 shadow-sm transition-transform hover:-translate-y-2 hover:shadow-xl cursor-pointer">
+            <div key={i} className="bg-white rounded-[32px] p-[32px] w-[300px] min-h-[420px] flex flex-col items-center shrink-0 border border-beigeStrong/50 shadow-sm transition-transform hover:-translate-y-2 hover:shadow-xl select-none">
               {/* Logo Box */}
-              <div className="h-[140px] w-full flex items-center justify-center mb-[32px]">
+              <div className="h-[140px] w-full flex items-center justify-center mb-[32px] pointer-events-none">
                 <img src={client.image} alt={client.name} className="max-h-full max-w-full object-contain" />
               </div>
               
-              <div className="flex flex-col items-center text-center gap-[12px] flex-grow justify-center">
+              <div className="flex flex-col items-center text-center gap-[12px] flex-grow justify-center pointer-events-none">
                 <p className="font-body font-[800] text-brown text-[20px] leading-tight">{client.name}</p>
                 <p className="font-body text-brownLight text-[15px] font-[500]">{client.sub}</p>
               </div>
