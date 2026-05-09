@@ -2,12 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  
+  // Use global language context
+  const { lang, setLang, t } = useLanguage();
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
@@ -79,23 +83,26 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-body text-base font-medium">
-          <Link href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-amber transition-colors">О нас</Link>
-          <Link href="#achievements" onClick={(e) => scrollToSection(e, 'achievements')} className="hover:text-amber transition-colors">Достижения</Link>
-          <Link href="#micromarket" onClick={(e) => scrollToSection(e, 'micromarket')} className="hover:text-amber transition-colors">Микромаркет</Link>
-          <Link href="#join" onClick={(e) => scrollToSection(e, 'join')} className="hover:text-amber transition-colors">Присоединиться</Link>
+          <Link href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-amber transition-colors">{t('nav.about')}</Link>
+          <Link href="#achievements" onClick={(e) => scrollToSection(e, 'achievements')} className="hover:text-amber transition-colors">{t('nav.achievements')}</Link>
+          <Link href="#micromarket" onClick={(e) => scrollToSection(e, 'micromarket')} className="hover:text-amber transition-colors">{t('nav.micromarket')}</Link>
+          <Link href="#join" onClick={(e) => scrollToSection(e, 'join')} className="hover:text-amber transition-colors">{t('nav.join')}</Link>
         </div>
 
         {/* Right Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="w-12 h-12 rounded-full bg-orange flex items-center justify-center text-sm font-bold transition-transform hover:scale-105">
-            RU
+          <button 
+            onClick={() => setLang(lang === 'en' ? 'ru' : 'en')}
+            className="w-12 h-12 rounded-full bg-orange flex items-center justify-center text-sm font-bold transition-transform hover:scale-105"
+          >
+            {lang === 'en' ? 'RU' : 'EN'}
           </button>
           <Link 
-            href="#join" 
-            onClick={(e) => scrollToSection(e, 'join')}
+            href="#contacts" 
+            onClick={(e) => scrollToSection(e, 'contacts')}
             className="px-8 py-3 rounded-full bg-orange font-body font-bold text-sm transition-transform hover:scale-105 text-center"
           >
-            Связаться с нами
+            {t('nav.contact')}
           </Link>
         </div>
 
@@ -110,18 +117,23 @@ export default function Navbar() {
       {/* Mobile Menu Drawer */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-espresso/95 backdrop-blur-md text-white p-8 flex flex-col gap-6">
-          <Link href="#about" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'about')}>О нас</Link>
-          <Link href="#achievements" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'achievements')}>Достижения</Link>
-          <Link href="#micromarket" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'micromarket')}>Микромаркет</Link>
-          <Link href="#join" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'join')}>Присоединиться</Link>
+          <Link href="#about" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'about')}>{t('nav.about')}</Link>
+          <Link href="#achievements" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'achievements')}>{t('nav.achievements')}</Link>
+          <Link href="#micromarket" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'micromarket')}>{t('nav.micromarket')}</Link>
+          <Link href="#join" className="font-body text-lg" onClick={(e) => scrollToSection(e, 'join')}>{t('nav.join')}</Link>
           <div className="flex gap-4 pt-4 border-t border-white/20">
-            <button className="w-12 h-12 rounded-full bg-orange flex items-center justify-center font-bold">RU</button>
-            <Link 
-              href="#join" 
-              className="flex-1 rounded-full bg-orange font-bold font-body py-3 text-center" 
-              onClick={(e) => scrollToSection(e, 'join')}
+            <button 
+              onClick={() => setLang(lang === 'en' ? 'ru' : 'en')}
+              className="w-12 h-12 rounded-full bg-orange flex items-center justify-center font-bold"
             >
-              Связаться с нами
+              {lang === 'en' ? 'RU' : 'EN'}
+            </button>
+            <Link 
+              href="#contacts" 
+              className="flex-1 rounded-full bg-orange font-bold font-body py-3 text-center" 
+              onClick={(e) => scrollToSection(e, 'contacts')}
+            >
+              {t('nav.contact')}
             </Link>
           </div>
         </div>

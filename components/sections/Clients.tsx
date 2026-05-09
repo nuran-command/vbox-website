@@ -1,35 +1,37 @@
 import React from 'react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Clients() {
+  const { t } = useLanguage();
   const clients = [
     {
       name: 'Барыс Арена',
-      sub: 'Островок и основная точка',
+      sub: t('clients.sub1'),
       image: '/images/image 13.svg'
     },
     {
       name: 'Mercedes Benz Astana',
-      sub: 'Поставили 1 микромаркет',
+      sub: t('clients.sub2'),
       image: '/images/image 14.svg'
     },
     {
       name: 'KPMG Astana',
-      sub: 'Поставили 2 микромаркета',
+      sub: t('clients.sub3'),
       image: '/images/image 15.svg'
     },
     {
       name: 'Sergek Group Astana',
-      sub: 'Поставили 1 микромаркет',
+      sub: t('clients.sub2'),
       image: '/images/image 13.svg'
     },
     {
       name: 'BARYS',
-      sub: 'Островок и основная точка',
+      sub: t('clients.sub1'),
       image: '/images/image 13.svg'
     },
     {
       name: 'BARYS',
-      sub: 'Островок и основная точка',
+      sub: t('clients.sub1'),
       image: '/images/image 13.svg'
     }
   ];
@@ -41,15 +43,15 @@ export default function Clients() {
         <div className="flex flex-col mb-[48px]">
           <div className="flex items-center gap-[16px] mb-[24px]">
             <span className="w-[32px] h-[2px] bg-orange"></span>
-            <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">Наши пользователи</span>
+            <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">{t('clients.tag')}</span>
           </div>
 
           <h2 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[16px]">
-            Нам доверяют
+            {t('clients.title')}
           </h2>
 
           <p className="font-body text-[16px] md:text-[18px] leading-[1.6] text-brownLight font-[400] max-w-[600px]">
-            Ведущие компании Казахстана выбирают vbox для комфорта своих сотрудников.
+            {t('clients.desc')}
           </p>
         </div>
       </div>

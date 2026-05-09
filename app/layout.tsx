@@ -14,6 +14,8 @@ const nunito = Nunito({
   weight: ["400", "500", "700"],
 });
 
+import { LanguageProvider } from "@/components/LanguageProvider";
+
 export const metadata: Metadata = {
   title: "vbox - Social Project",
   description: "Мы расширяем возможности людей с особыми потребностями через технологии и значимую занятость.",
@@ -27,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${unbounded.variable} ${nunito.variable} antialiased`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

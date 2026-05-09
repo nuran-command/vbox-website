@@ -1,6 +1,9 @@
 import React from 'react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section 
       className="relative min-h-screen w-full flex flex-col justify-center items-start overflow-hidden"
@@ -29,21 +32,19 @@ export default function Hero() {
           <h1
             className="font-display font-[700] text-white mb-[24px] md:mb-[40px] text-[52px] leading-[1.1] tracking-[-1px] md:text-[86px] md:leading-[84px] md:tracking-[-2.58px]"
           >
-            Social
+            {t('hero.title.1')}
             <br />
-            <span className="text-orange">Project</span>
+            <span className="text-orange">{t('hero.title.2')}</span>
           </h1>
 
           <p className="font-body text-white/90 text-[16px] md:text-[20px] max-w-[528px] mb-[40px] md:mb-[60px] leading-[1.6] font-[500]">
-            Мы расширяем возможности людей с особыми потребностями,
-            выпускников детских домов и детей из малообеспеченных семей
-            через технологии и значимую занятость.
+            {t('hero.description')}
           </p>
 
           <button
             className="bg-orange text-white font-body font-bold rounded-[12px] transition-transform hover:-translate-y-1 hover:shadow-lg w-full sm:w-[221.55px] h-[50.8px] text-[16px] flex items-center justify-center"
           >
-            Присоединиться
+            {t('hero.button')}
           </button>
         </div>
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Micromarket() {
+  const { t } = useLanguage();
   return (
     <section id="micromarket" className="py-[96px] md:py-[128px] bg-white overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-6 sm:px-8 md:px-[34px]">
@@ -8,7 +10,7 @@ export default function Micromarket() {
         {/* Section Tag */}
         <div className="flex items-center justify-start gap-[16px] mb-[32px] md:mb-[64px] lg:pl-[100px]">
           <span className="w-[32px] h-[2px] bg-orange"></span>
-          <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">Микромаркет</span>
+          <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">{t('micro.tag')}</span>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-[48px] md:gap-[64px] lg:pl-[100px] items-center lg:items-start text-center lg:text-left">
@@ -23,19 +25,19 @@ export default function Micromarket() {
           {/* Right Column: Content */}
           <div className="flex flex-col items-center lg:items-start max-w-[568.7px]">
             <h2 className="font-display font-[700] text-[32px] md:text-[40px] text-brown mb-[16px] leading-tight">
-              Что такое vbox?
+              {t('micro.title')}
             </h2>
 
             <p className="font-body text-brownLight text-[16px] md:text-[18px] leading-[1.4] mb-[40px]">
-              Умный вендинговый автомат — где можно купить готовую еду, снеки, воду и напитки за 30 секунд, не выходя из офиса. Работает 24/7.
+              {t('micro.desc')}
             </p>
 
             {/* Food Categories Grid */}
             <div className="grid grid-cols-2 gap-[16px] md:gap-[24px] w-full">
-              <CategoryCard title="СНЭКИ" image="/images/micro1.png" />
-              <CategoryCard title="ГОТОВАЯ ЕДА" image="/images/micro2.png" />
-              <CategoryCard title="ФРУКТЫ" image="/images/micro3.png" />
-              <CategoryCard title="ВЫПЕЧКА" image="/images/micro4.png" />
+              <CategoryCard title={t('micro.cat1')} image="/images/micro1.png" />
+              <CategoryCard title={t('micro.cat2')} image="/images/micro2.png" />
+              <CategoryCard title={t('micro.cat3')} image="/images/micro3.png" />
+              <CategoryCard title={t('micro.cat4')} image="/images/micro4.png" />
             </div>
           </div>
 

@@ -8,19 +8,23 @@ function MailIcon({ className }: { className?: string }) {
   );
 }
 
+
+import { useLanguage } from '@/components/LanguageProvider';
+
 export default function Contacts() {
+  const { t } = useLanguage();
   return (
-    <section className="py-[96px] md:py-[128px] bg-white">
+    <section id="contacts" className="py-[96px] md:py-[128px] bg-white">
       <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px]">
         
         {/* Top Headings */}
         <div className="flex flex-col mb-[48px] md:mb-[64px]">
           <div className="flex items-center gap-[16px] mb-[24px]">
             <span className="w-[32px] h-[2px] bg-orange"></span>
-            <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">Контакты</span>
+            <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">{t('contacts.tag')}</span>
           </div>
           <h2 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown">
-            Обращайтесь
+            {t('contacts.title')}
           </h2>
         </div>
 
@@ -29,7 +33,7 @@ export default function Contacts() {
           {/* Left Column: Contact Details */}
           <div className="flex flex-col">
             <h3 className="font-display font-[700] text-[32px] md:text-[40px] text-[#1A1A1A] mb-[32px]">
-              Контакты:
+              {t('contacts.label')}
             </h3>
             
             <div className="flex flex-col gap-[12px]">
@@ -37,13 +41,13 @@ export default function Contacts() {
                 +77051605526
               </p>
               <p className="font-display font-[700] text-[#1A1A1A] text-[20px] md:text-[24px]">
-                Нура район, Астана,
+                {t('contacts.address.1')}
               </p>
               <p className="font-display font-[700] text-[#1A1A1A] text-[20px] md:text-[24px]">
-                Кабанбай батыр проспект,
+                {t('contacts.address.2')}
               </p>
               <p className="font-display font-[700] text-[#1A1A1A] text-[20px] md:text-[24px]">
-                53 блок 28, 1 этаж
+                {t('contacts.address.3')}
               </p>
             </div>
           </div>

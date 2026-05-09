@@ -1,25 +1,12 @@
 import React, { useState } from 'react';
-
-const ALL_ACHIEVEMENTS = [
-  "Финалисты BI SYNERGY SPRINT 2024 от BI Group — вошли в топ-10 из 200 проектов.",
-  "Финалисты Quick Start XV 2024.",
-  "Победа в программе MIRAI Министерства иностранных дел Японии.",
-  "Победа в конкурсе Social Startup Camp 2025, организованном NU Impact Foundation для лучших социальных стартапов.",
-  "Победа в номинации Heart of Impact на People & Projects Awards 2025.",
-  "Победа в ProductBee Awards 2025 (креативный бизнес).",
-  "Победа в номинации Startup of the Year 2025 (Vbox Social).",
-  "Победа в MNU Alumni Awards 2025 как лучший предпринимательский проект.",
-  "Вхождение в Short-list STEPPE Awards 2025.",
-  "Приглашение и презентация на World Nomad Games.",
-  "Участие в международном форуме молодежи в России, получены предложения о сотрудничестве и выходе на рынок РФ.",
-  "Международные презентации проекта в Индии, России и Италии.",
-  "Коллаборации: ComicCon Astana 2025, Team Spirit PGL Astana 2025, международный хоккейный турнир KHL.",
-  "Благодарственное письмо для нас ТОО “Sheksiz Orta” от (NU)."
-];
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Achievements() {
+  const { t } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const ALL_ACHIEVEMENTS = Array.from({ length: 14 }).map((_, idx) => t(`achievements.item.${idx}`));
+  
   const displayedItems = isExpanded ? ALL_ACHIEVEMENTS : ALL_ACHIEVEMENTS.slice(0, 5);
 
   return (
@@ -32,16 +19,16 @@ export default function Achievements() {
             <div className="flex flex-col w-full">
               <div className="flex items-center gap-[16px] mb-[24px]">
                 <span className="w-[32px] h-[2px] bg-orange"></span>
-                <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">Наши достижения</span>
+                <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">{t('achievements.tag')}</span>
               </div>
 
               <h2
                 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[16px]"
               >
-                Результаты, которые говорят сами
+                {t('achievements.title')}
               </h2>
               <p className="font-body text-brownLight text-base md:text-lg mb-[48px]">
-                Достижения которых мы достигли
+                {t('achievements.desc')}
               </p>
 
               {/* Achievements List */}
@@ -74,7 +61,7 @@ export default function Achievements() {
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="px-[48px] py-[16px] bg-amber text-espresso font-body font-bold rounded-full transition-all hover:brightness-110 hover:-translate-y-1 hover:shadow-lg shadow-md w-full md:w-auto"
                 >
-                  {isExpanded ? "Скрыть" : "Смотреть все"}
+                  {isExpanded ? t('achievements.btn.hide') : t('achievements.btn.show')}
                 </button>
               </div>
             </div>
@@ -92,7 +79,7 @@ export default function Achievements() {
                 className="absolute -bottom-[24px] lg:-bottom-[40px] lg:right-[20px] bg-amber rounded-[20px] px-[24px] py-[20px] shadow-lg z-20 flex items-center justify-center text-center w-[90%] max-w-[417px] min-h-[79px]"
               >
                 <p className="font-display font-[700] text-[16px] md:text-[20px] text-espresso">
-                  “Место для цитаты _______”
+                  {t('achievements.quote')}
                 </p>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Mission() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-[96px] md:py-[128px] bg-white relative overflow-hidden">
       <div className="max-w-[1514px] mx-auto px-4 sm:px-8 md:px-[34px] relative z-10">
@@ -10,33 +12,30 @@ export default function Mission() {
           <div className="flex flex-col">
             <div className="flex items-center gap-[16px] mb-[24px]">
               <span className="w-[32px] h-[2px] bg-orange"></span>
-              <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">Наша цель</span>
+              <span className="text-orange font-body font-bold text-sm uppercase tracking-wider">{t('mission.tag')}</span>
             </div>
             
             <h2 className="font-display font-[700] text-[40px] md:text-[48px] lg:text-[56px] leading-[1.1] text-brown mb-[32px]">
-              Мы создаём <br className="hidden md:block"/> смысл через труд
+              {t('mission.title')} <br className="hidden md:block"/> {t('mission.title.2')}
             </h2>
             
             <p className="font-body text-brownMid text-base md:text-lg mb-[40px] leading-relaxed">
-              Мы предоставляем значимые возможности трудоустройства для людей с 
-              особыми потребностями, выпускников детских домов и молодёжи из 
-              малообеспеченных семей. Наша мастерская создаёт поддерживающую 
-              среду, где каждый может развить навыки и построить карьеру.
+              {t('mission.desc')}
             </p>
 
             {/* Badges / Tags */}
             <div className="flex flex-wrap gap-[8px] md:gap-[16px]">
               <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
-                Технологии
+                {t('mission.badge.1')}
               </span>
               <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
-                Адаптация
+                {t('mission.badge.2')}
               </span>
               <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
-                Масштабируемый импакт
+                {t('mission.badge.3')}
               </span>
               <span className="px-[24px] py-[8px] bg-orange text-white font-body font-bold rounded-full text-sm">
-                Социальный лифт
+                {t('mission.badge.4')}
               </span>
             </div>
           </div>

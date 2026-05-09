@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Team() {
+  const { t } = useLanguage();
   const photos = ['team1.png', 'team2.png', 'team3.png', 'team4.png'];
 
   return (
@@ -11,15 +13,15 @@ export default function Team() {
           {/* Label: Absolute left on desktop, centered/flow on mobile */}
           <div className="md:absolute md:left-0 md:-top-[32px] flex items-center justify-start gap-[16px] mb-[24px] md:mb-0">
             <span className="w-[32px] h-[2px] bg-orange"></span>
-            <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">Наша команда</span>
+            <span className="text-orange font-body font-[600] text-[14px] leading-[1.4] uppercase tracking-wider">{t('team.tag')}</span>
           </div>
 
           <h2 className="font-display font-[700] text-[40px] md:text-[56px] lg:text-[64px] leading-[1.1] text-brown mb-[24px] max-w-[800px] mx-0 md:mx-auto">
-            Хочешь стать частью <br className="hidden md:block" /> нашей команды?
+            {t('team.title')} <br className="hidden md:block" /> {t('team.title.2')}
           </h2>
 
           <p className="font-body text-[16px] md:text-[18px] leading-[1.6] text-brownLight font-[400]">
-            Возьми все в свои руки, меняй будущее вместе с нами!
+            {t('team.desc')}
           </p>
         </div>
       </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-[#0F0F0F] text-white py-12 md:py-16">
       <div className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-8">
@@ -13,7 +15,7 @@ export default function Footer() {
               <img src="/images/vbox_logo.png" alt="vbox logo" className="h-10 w-auto object-contain" />
             </Link>
             <span className="text-white/40 text-[14px] font-body mt-1 md:mt-0">
-              © 2024 VBOX social. Все права защищены.
+              {t('footer.copy')}
             </span>
           </div>
         </div>
@@ -22,7 +24,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-end gap-8">
           <div className="max-w-[500px]">
             <p className="text-white/70 text-[14px] md:text-[16px] font-body leading-relaxed">
-              Социальный стартап, объединяющий людей и технологии для создания инклюзивных рабочих мест в Казахстане.
+              {t('footer.desc')}
             </p>
           </div>
 
