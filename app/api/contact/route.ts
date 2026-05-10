@@ -4,6 +4,21 @@ export async function POST(request: Request) {
   try {
     const { name, surname, phone, email, about } = await request.json();
 
+    // Basic server-side validation
+    if (!name || !surname || !phone) {
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email && !emailRegex.test(email)) {
+      return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
+    }
+
+    const phoneDigits = phone.replace(/\D/g, '');
+    if (phoneDigits.length < 11) {
+      return NextResponse.json({ error: 'Invalid phone number' }, { status: 400 });
+    }
+
     // Telegram Bot API configuration
     const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
     const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
