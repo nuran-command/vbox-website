@@ -3,7 +3,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Adjust based on navbar height */
+  scroll-padding-top: 100px;
 }
 
 :root {
@@ -15,8 +15,19 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-nunito), sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-unbounded), sans-serif;
 }
+
+/* Fix for potential horizontal scroll on zoom */
+* {
+  box-sizing: border-box;
+}
+

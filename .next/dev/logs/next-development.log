@@ -11,3 +11,12 @@
 {"timestamp":"02:59:20.196","source":"Server","level":"LOG","message":"✓ Compiled in 460ms"}
 {"timestamp":"04:35:28.209","source":"Server","level":"LOG","message":"✓ Compiled in 366ms"}
 {"timestamp":"04:35:28.790","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./components/LanguageProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"04:58:45.251","source":"Server","level":"LOG","message":"✓ Compiled in 425ms"}
+{"timestamp":"04:59:42.159","source":"Server","level":"LOG","message":"✓ Compiled in 611ms"}
+{"timestamp":"05:05:10.147","source":"Server","level":"LOG","message":"✓ Compiled in 270ms"}
+{"timestamp":"07:27:18.234","source":"Server","level":"LOG","message":"✓ Compiled in 503ms"}
+{"timestamp":"07:42:12.822","source":"Server","level":"LOG","message":"✓ Compiled in 480ms"}
+{"timestamp":"07:58:51.748","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
+{"timestamp":"07:59:26.851","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
+{"timestamp":"08:12:48.393","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
+{"timestamp":"08:31:28.973","source":"Server","level":"LOG","message":"  Reload env: .env.local"}

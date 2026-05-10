@@ -75,6 +75,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-100: #ffe2e2;
     --spacing: .25rem;
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
@@ -99,6 +100,12 @@
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+  }
+
+  @supports (color: lab(0% 0 0)) {
+    :root, :host {
+      --color-red-100: lab(92.243% 10.2865 3.83865);
+    }
   }
 }
 
@@ -437,6 +444,10 @@
     margin-top: calc(var(--spacing) * 1);
   }
 
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+
   .mt-\[12px\] {
     margin-top: 12px;
   }
@@ -541,10 +552,6 @@
     height: 360px;
   }
 
-  .h-\[471px\] {
-    height: 471px;
-  }
-
   .h-full {
     height: 100%;
   }
@@ -563,10 +570,6 @@
 
   .min-h-\[320px\] {
     min-height: 320px;
-  }
-
-  .min-h-\[420px\] {
-    min-height: 420px;
   }
 
   .min-h-auto {
@@ -611,10 +614,6 @@
 
   .w-\[300px\] {
     width: 300px;
-  }
-
-  .w-\[359px\] {
-    width: 359px;
   }
 
   .w-auto {
@@ -1193,10 +1192,6 @@
     font-size: 14px;
   }
 
-  .text-\[15px\] {
-    font-size: 15px;
-  }
-
   .text-\[16px\] {
     font-size: 16px;
   }
@@ -1337,6 +1332,10 @@
 
   .text-orange {
     color: #e8721a;
+  }
+
+  .text-red-100 {
+    color: var(--color-red-100);
   }
 
   .text-white {
@@ -1566,6 +1565,14 @@
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
 
+  .disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+
+  .disabled\:opacity-50:disabled {
+    opacity: .5;
+  }
+
   @media (min-width: 40rem) {
     .sm\:w-\[221\.55px\] {
       width: 221.55px;
@@ -1627,12 +1634,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:top-0 {
-      top: calc(var(--spacing) * 0);
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:top-\[24px\] {
       top: 24px;
     }
@@ -1641,12 +1642,6 @@
   @media (min-width: 48rem) {
     .md\:right-0 {
       right: calc(var(--spacing) * 0);
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:bottom-auto {
-      bottom: auto;
     }
   }
 
@@ -1741,8 +1736,8 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:h-\[912px\] {
-      height: 912px;
+    .md\:h-full {
+      height: 100%;
     }
   }
 
@@ -2157,10 +2152,19 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-nunito), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-unbounded), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 @property --tw-translate-x {

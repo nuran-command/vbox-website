@@ -19,6 +19,9 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 export const metadata: Metadata = {
   title: "vbox - Social Project",
   description: "Мы расширяем возможности людей с особыми потребностями через технологии и значимую занятость.",
+  icons: {
+    icon: '/images/Group 206.svg',
+  },
 };
 
 export default function RootLayout({

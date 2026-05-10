@@ -15,7 +15,7 @@ export default function Hero() {
       <img
         src="/images/image 0.png"
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover object-[40%_100%] md:w-[1535px] md:h-[912px] md:top-0 md:right-0 md:left-auto md:bottom-auto max-w-none"
+        className="absolute inset-0 w-full h-full object-cover object-[40%_100%] md:left-auto md:right-0 md:w-[1535px] md:h-full max-w-none"
       />
 
       {/* Overlay - full page */}
