@@ -55,7 +55,7 @@ export default function Contacts() {
           {/* Right Column: Interactive Map */}
           <div className="relative w-full aspect-[4/3] rounded-[32px] overflow-hidden shadow-sm border border-beigeStrong/50">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.414457745672!2d71.3965586125026!3d51.1008064405389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585c57a555555%3A0x5555555555555555!2z0L_RgC3Rgi4g0JrQsNCx0LDQvdCx0LDQuSDQkdCw0YLRi9GA0LAsIDUzLCDQkNGB0YLQsNC90LAgMDEwMDAw!5e0!3m2!1sru!2skz!4v1715241981234!5m2!1sru!2skz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.606233261642!2d71.41165381575317!3d51.0858717795701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585c572b83441%3A0x64426514936d50f8!2sKabanbay%20Batyr%20Ave%2C%2053%2C%20Astana%20010000!5e0!3m2!1sen!2skz!4v1715351400000!5m2!1sen!2skz"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

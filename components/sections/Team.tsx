@@ -32,7 +32,7 @@ export default function Team() {
           {photos.map((src, i) => (
             <div
               key={i}
-              className="w-[359px] h-[471px] bg-creamWarm rounded-[32px] overflow-hidden shrink-0 shadow-lg group relative cursor-pointer"
+              className="w-[280px] h-[360px] md:w-[359px] md:h-[471px] bg-creamWarm rounded-[32px] overflow-hidden shrink-0 shadow-lg group relative cursor-pointer"
             >
               {/* Image */}
               <img

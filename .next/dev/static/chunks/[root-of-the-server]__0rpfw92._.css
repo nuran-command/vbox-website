@@ -800,6 +800,10 @@
     height: 140px;
   }
 
+  .h-\[360px\] {
+    height: 360px;
+  }
+
   .h-\[471px\] {
     height: 471px;
   }
@@ -818,6 +822,10 @@
 
   .min-h-\[88px\] {
     min-height: 88px;
+  }
+
+  .min-h-\[320px\] {
+    min-height: 320px;
   }
 
   .min-h-\[420px\] {
@@ -858,6 +866,10 @@
 
   .w-\[90\%\] {
     width: 90%;
+  }
+
+  .w-\[280px\] {
+    width: 280px;
   }
 
   .w-\[300px\] {
@@ -1986,6 +1998,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:h-\[471px\] {
+      height: 471px;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:h-\[912px\] {
       height: 912px;
     }
@@ -1994,6 +2012,12 @@
   @media (min-width: 48rem) {
     .md\:w-\[32px\] {
       width: 32px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-\[359px\] {
+      width: 359px;
     }
   }
 

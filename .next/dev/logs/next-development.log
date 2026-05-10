@@ -1,2 +1,13 @@
-{"timestamp":"00:00:02.539","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:01:42.576","source":"Server","level":"LOG","message":"✓ Compiled in 4.9s"}
+{"timestamp":"00:00:01.895","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:08:02.153","source":"Server","level":"LOG","message":"✓ Compiled in 1609ms"}
+{"timestamp":"00:08:07.034","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./components/LanguageProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:08:08.167","source":"Server","level":"LOG","message":"✓ Compiled in 115ms"}
+{"timestamp":"00:08:10.857","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./components/LanguageProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:10:01.137","source":"Server","level":"LOG","message":"✓ Compiled in 287ms"}
+{"timestamp":"02:49:09.773","source":"Server","level":"LOG","message":"✓ Compiled in 600ms"}
+{"timestamp":"02:49:12.244","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./components/LanguageProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"02:49:27.369","source":"Server","level":"LOG","message":"✓ Compiled in 478ms"}
+{"timestamp":"02:59:11.975","source":"Server","level":"LOG","message":"✓ Compiled in 495ms"}
+{"timestamp":"02:59:20.196","source":"Server","level":"LOG","message":"✓ Compiled in 460ms"}
+{"timestamp":"04:35:28.209","source":"Server","level":"LOG","message":"✓ Compiled in 366ms"}
+{"timestamp":"04:35:28.790","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./components/LanguageProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
