@@ -45,11 +45,13 @@ export default function WhyItMatters() {
           </div>
         </div>
 
-        {/* Action Button */}
         <div className="text-center">
-          <button className="px-[32px] py-[16px] bg-yellow text-espresso font-body font-bold rounded-lg transition-transform hover:-translate-y-1 hover:shadow-lg">
+          <a 
+            href="#join"
+            className="inline-block px-[32px] py-[16px] bg-yellow text-espresso font-body font-bold rounded-lg transition-transform hover:-translate-y-1 hover:shadow-lg"
+          >
             {t('why.button')}
-          </button>
+          </a>
         </div>
 
       </div>
